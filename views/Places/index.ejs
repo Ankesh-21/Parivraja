@@ -1,0 +1,37 @@
+<% layout('layout/Boilerplate')-%>
+
+    <body>
+        <% if (allPlaces){ %>
+            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 d-flex justify-content-center">
+                <% for (let i=0;i<allPlaces.length;i++){ %>
+                    <div class="card col" style="width: 18rem;">
+                        <a href="/place/<%= allPlaces[i]._id %>">
+                            <img src="<%= allPlaces[i].image %>" class="card-img-top"
+                                alt="image<%= allPlaces[i]._id %>">
+                            <div class="card-img-overlay">
+                                <%= allPlaces[i].location %>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <%= allPlaces[i].title %>
+                                </h5>
+                                <p class="card-text">
+                                    <%= allPlaces[i].description %>
+                                </p>
+                                <h5>
+                                    <%= allPlaces[i].price %>/night
+                                </h5>
+                                <h5>
+                                    <%= allPlaces[i].country %>
+                                </h5>
+                            </div>
+                        </a>
+                    </div>
+                    <% } %>
+            </div>
+            <% } %>
+                <!-- <form action="/addPlace" method="get">
+        <button type="submit">ADD YOUR PLACE</button>
+    </form> -->
+                <!-- <button><a href="/addPlace">ADD YOUR PLACE</a></button> -->
+    </body>

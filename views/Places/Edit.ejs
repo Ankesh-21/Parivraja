@@ -1,0 +1,45 @@
+<% layout('layout/Boilerplate')-%>
+<% block('title', 'Edit Your Home') -%>
+    <body>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <h3>Edit Your Home</h3>
+                <form action="/place/<%= data._id %>/edit?_method=PUT" method="post">
+                    <div class="mb-3">
+                        <label for="title" class="form-label">title</label>
+                        <input type="text" name="newPlace[title]" id="title" value="<%= data.title %>"
+                            class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="desc" class="form-label">description</label>
+                        <input type="textarea" name="newPlace[desc]" id="desc" value="<%= data.description %>"
+                            class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Price</label>
+                        <input type="text" name="price" id="price" value="<%= data.price %>" class="form-control">
+                    </div>
+                    <div class="row">
+                        <div class="mb-3 col-md-4">
+                            <label for="location" class="form-label">location</label>
+                            <input type="text" name="newPlace[location]" id="location" value="<%= data.location %>"
+                                class="form-control">
+                        </div>
+                        <div class="mb-3 col-md-8">
+                            <label for="country" class="form-label">country</label>
+                            <input type="text" name="newPlace[country]" id="country" value="<%= data.country %>"
+                                class="form-control">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="img" class="form-label">Image</label>
+                        <input type="text" name="newPlace[image]" id="image" value="<%= data.image %>"
+                            class="form-control">
+                    </div>
+                    <br></br>
+                    <button type="submit" class="btn btn-outline-dark">Submit</button>
+                    <br></br>
+                </form>
+            </div>
+        </div>
+    </body>

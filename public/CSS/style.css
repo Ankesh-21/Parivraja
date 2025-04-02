@@ -1,0 +1,142 @@
+body {
+    background-color: #faedcd !important;
+    color: #111;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar {
+    height: 4rem !important;
+    background: #d5bdaf !important;
+}
+
+.fa-solid {
+    color: #d4a373;
+    font-size: 2rem;
+}
+.nav-link{
+    color: #111 !important;
+}
+.tags{
+    display: flex;
+}
+.tags a{
+    text-decoration: none !important;
+    color: #111 !important;
+}
+.tags a:hover{
+    text-decoration: underline;
+}
+.tags ul
+{
+    display: flex;
+    gap: 2rem;
+}
+.footer-container{
+    text-align: center !important;
+    display: flex !important;
+    height: 4rem !important;
+    align-items: center !important;
+    justify-content: center !important;
+    justify-content: space-around !important;
+    background-color: #fefae0 !important;
+}
+.footer-container .socials a{
+    font-size: 1.4rem !important;
+    text-decoration: none !important;
+    color: #111 !important;
+}
+.footer-container .socials{
+    display: flex;
+    gap: 1.2rem;
+}
+.card{
+    border: none !important;
+    background-color: #faedcd !important;
+    margin:2rem;
+}
+.card a{
+    text-decoration: none;
+    color: #111;
+}
+.card img
+{
+    border-radius: 5% !important;
+}
+.container{
+    margin-top: 3rem !important;
+    flex: 1;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: #fff;
+}
+.oneplace-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.oneplace-container h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.oneplace-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.oneplace-container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.oneplace-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.oneplace-container ul li {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.oneplace-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.oneplace-btn .btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.oneplace-btn .btn-outline-dark {
+    border: 1px solid #333;
+    color: #333;
+}
+
+.oneplace-btn .btn-outline-dark:hover {
+    background-color: #333;
+    color: #fff;
+}
